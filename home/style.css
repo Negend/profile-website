@@ -74,16 +74,16 @@ header{
 #second {
 	font-color:black;
 	font-family:cursive;
-	font-size:0.7em;
+	font-size:0.9em;
 	padding:0.3em;
 
 }
 #second p {
-	font-size:1.5em;
+	font-size:1.2em;
 }
-span:hover {
+#second p:hover {
 	font-weight: bold;
-	font-size:2em;
+	font-size:1.5em;
 	text-shadow:1px 1px 1em black; 
 	transition:1s;
 }
