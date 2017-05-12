@@ -1,0 +1,224 @@
+#frame {
+	border-radius :20px;
+	box-shadow: 3px 3px 1em black, -3px -3px 1em black;
+	width:80%;
+	height:400px;
+	padding:5px;
+	text-align:center;
+	min-width: 280px;
+	min-height: 350px;
+	margin:auto;
+
+
+	
+	background: linear-gradient( #e1e7ec, white);
+/*lets try and make a centered block rounded off a lil 
+lets give it a translucent box-shadow just to make it pop, put a picture and an about me statement
+
+*/
+}
+#focus{
+
+}
+.frame{
+	margin:3px;
+
+}
+#pc {
+	display:none;
+}
+main {
+	height:100vh;
+	text-align:center;
+	background-image: url("https://s-media-cache-ak0.pinimg.com/avatars/nneji2day_1437370236_280.jpg");
+
+/*ok lets  have a main. keep the website simple might be a good idea to 
+section everything in the middle*/
+
+}
+.pages{
+	background-color: beige;
+	color:black;	
+	text-align:center;
+	width:80px;
+	list-style:none;
+	border:2px solid black;
+	margin:7% 0px;
+
+
+
+}
+#tabs{
+	width:40%;
+	margin:0px;
+	padding:0px;
+	display:inline-block;
+	
+
+}
+
+
+nav{
+	min-width:280px;
+	text-align:left;
+	background:linear-gradient(to bottom left, #0e0e0e , rgba(2, 2, 2, 0.29));
+}
+header{
+	display:none;
+}
+#phone{
+	border-radius: 50%;
+	
+	width:39%;
+}
+#second {
+	font-color:black;
+	font-family:cursive;
+	font-size:0.9em;
+	padding:0.3em;
+
+}
+#second p {
+	font-size:1.2em;
+}
+#second p:hover {
+	font-weight: bold;
+	font-size:1.5em;
+	text-shadow:1px 1px 1em black; 
+	transition:1s;
+}
+
+#bubble{
+	display:inline-block;
+	margin-top:-20vw;
+	text-align:center;
+	width:100%;
+	min-width:280px;
+	
+		
+}
+.bubble{
+	height:17vw;
+	width:17vw;
+	min-height: 50px;
+	min-width: 50px;
+	background-color: beige;
+	border-radius:5vh;
+	display:inline-block;
+	text-align:center;
+}	
+.bubble img{
+	height:100%;
+	width:100%;
+	border-radius:5vh;
+}
+#third{
+	display: none;
+
+}
+
+
+
+
+
+
+/*the real website starts here*/
+
+
+
+
+@media screen and ( min-width:456px) {
+	#phone {
+		display: none;
+	}
+	header{
+		height:15vh;
+		margin:0;
+		background-color: black;
+		display:block;
+		padding:2vh 10vw;
+	}
+	h1{
+		display:inline-block;
+		font-size:3em;
+		color:white;
+	}
+	#frame{
+		margin:auto;
+		width:40vh;
+		display:inline-block;
+		border-radius:100px;
+		height:40vh;
+		margin-top:13vh;
+	}
+	#focus{
+		display:inline-block;
+		
+	}
+	nav {
+		background:linear-gradient( black , rgba(0, 0, 0, 0));
+	}
+	.pages{
+		display:inline-block;
+		text-align:center;
+		margin:0px;
+
+
+		
+		width:18%;
+	}
+	#tabs{
+		width:100%;
+		text-align:center;
+	}
+	
+	
+	.bubble{
+		
+		text-align:center;
+		height:9vh;
+		width:9vh;
+		border:3px solid white;
+		background-image: url("http://metrouk2.files.wordpress.com/2014/03/linkedin-inbug-2crev.png");
+		margin:0 3vw;
+	}
+
+	.bubble:hover{
+		transform:rotate(360deg);
+		transition: 1s;
+	}
+	#bubble{
+		display:block;
+		margin-top: 9vh;
+		width:100vw;
+	}
+	#pc{
+		display:inline-block;
+		border-radius:8vh;
+		height:16vh;
+	}
+	#first{
+		display:block;
+		margin:auto;
+		
+	}
+	#third{
+		display:inline-block;
+		float:right;
+		opacity: 0;
+		background-color:white;
+		border-radius: 50px;
+		box-shadow:3px 3px 1em black;
+		height:200px;
+		width:50px;
+		margin:22vh 2vw 0 0;
+
+	}
+	#third:hover{
+		opacity:1;
+		transition:0.5s;
+	}
+}	
+
+	
+	
