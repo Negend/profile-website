@@ -105,7 +105,13 @@ span:hover {
 	background-color: beige;
 	border-radius:5vh;
 	display:inline-block;
+	text-align:center;
 }	
+.bubble img{
+	height:100%;
+	width:100%;
+	border-radius:5vh;
+}
 #third{
 	display: none;
 
@@ -172,10 +178,14 @@ span:hover {
 		text-align:center;
 		height:9vh;
 		width:9vh;
-		background-color: white;
-		border-radius:5vh;
-		margin:0 4vw;
+		border:3px solid white;
+		background-image: url("http://metrouk2.files.wordpress.com/2014/03/linkedin-inbug-2crev.png");
+		margin:0 3vw;
+	}
 
+	.bubble:hover{
+		transform:rotate(360deg);
+		transition: 1s;
 	}
 	#bubble{
 		display:block;
