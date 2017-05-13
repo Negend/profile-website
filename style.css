@@ -49,9 +49,10 @@ section everything in the middle*/
 	list-style:none;
 	border:2px solid black;
 	margin:7% 0px;
+}
 
-
-
+#current{
+	background-color: white;
 }
 #tabs{
 	width:40%;
