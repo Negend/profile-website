@@ -2,7 +2,7 @@
 	border-radius :20px;
 	box-shadow: 3px 3px 1em black, -3px -3px 1em black;
 	width:80%;
-	height:400px;
+	/*height:400px;*/
 	padding:5px;
 	text-align:center;
 	min-width: 280px;
@@ -11,25 +11,30 @@
 
 
 	
-	background: linear-gradient( #e1e7ec, white);
+	background: linear-gradient( #f9f2f0, white);
 /*lets try and make a centered block rounded off a lil 
 lets give it a translucent box-shadow just to make it pop, put a picture and an about me statement
 
 */
 }
-#focus{
 
+#focus{
+	text-align:center;
 }
 .frame{
 	margin:3px;
 
 }
-#pc {
+.pc {
 	display:none;
+}
+
+body{
+	margin:0;
 }
 main {
 	height:100vh;
-	text-align:center;
+	
 	background-image: url("https://s-media-cache-ak0.pinimg.com/avatars/nneji2day_1437370236_280.jpg");
 
 /*ok lets  have a main. keep the website simple might be a good idea to 
@@ -65,6 +70,7 @@ nav{
 }
 header{
 	display:none;
+	text-align:center;
 }
 #phone{
 	border-radius: 50%;
@@ -141,14 +147,14 @@ header{
 	h1{
 		display:inline-block;
 		font-size:3em;
-		color:white;
+		color:#f9f2f0;
 	}
 	#frame{
 		margin:auto;
 		width:40vh;
 		display:inline-block;
 		border-radius:100px;
-		height:40vh;
+		
 		margin-top:13vh;
 	}
 	#focus{
@@ -178,7 +184,7 @@ header{
 		text-align:center;
 		height:9vh;
 		width:9vh;
-		border:3px solid white;
+		border:3px solid #fdbeac;
 		background-image: url("http://metrouk2.files.wordpress.com/2014/03/linkedin-inbug-2crev.png");
 		margin:0 3vw;
 	}
@@ -192,18 +198,56 @@ header{
 		margin-top: 9vh;
 		width:100vw;
 	}
-	#pc{
+	.pc{
 		display:inline-block;
 		border-radius:8vh;
 		height:16vh;
+		max-width: 250px;
+		border: 1px dashed grey;
 	}
+	/*lets try a flip*/
+	.pc{
+		
+		backface-visibility: hidden;
+
+		
+		
+	}
+	#pc2{
+		transform: rotateY( 180deg );
+		position:absolute;
+		margin-left: -11.3em
+	}
+	
+	#first:hover{
+			transform: rotateY( 180deg );
+		}
+
+
+	#first{
+		
+		perspective:800px;
+		transition: transform 1s;
+		
+		transform-style:preserve-3d;
+		height:16vh;
+		max-width: 250px
+	}
+	#flipper{
+		display:inline-block;
+		height: 16vh;
+		width:280px;
+	}
+
+	/*flip end*/
 	#first{
 		display:block;
 		margin:auto;
-		
 	}
+
 	#third{
 		display:inline-block;
+
 		float:right;
 		opacity: 0;
 		background-color:white;
@@ -211,7 +255,8 @@ header{
 		box-shadow:3px 3px 1em black;
 		height:200px;
 		width:50px;
-		margin:22vh 2vw 0 0;
+		margin:-53vh 2vw 0 0;
+
 
 	}
 	#third:hover{
