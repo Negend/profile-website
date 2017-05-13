@@ -85,8 +85,12 @@ header{
 	padding:0.3em;
 
 }
+span{
+	font-family: arial;
+}
 #second p {
 	font-size:1.2em;
+	margin:10px 0;
 }
 #second p:hover {
 	font-weight: bold;
